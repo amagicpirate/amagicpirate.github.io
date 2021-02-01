@@ -1,0 +1,1 @@
+# amagicpirate.github.io
