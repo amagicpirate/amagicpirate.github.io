@@ -1,0 +1,366 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+/* 外框 */
+.big{
+	width: 100%;
+	height: 100vh;
+}
+/* 头部 */
+.big .head{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	}
+	/* 头左 */
+	.big .head .head-left{
+		height: 100%;
+		float: left;
+	}
+	.head .head-left>a{
+		font-size: 13px;
+		color: #222;
+		float: left;
+		margin-left: 30px;
+	}
+	.head .head-left>a:hover{
+		color: #315efb;
+	}
+	.head .more{
+		float: left;
+		position: relative;
+	}
+	.head .more>a{
+		font-size: 13px;
+		color: #222;
+		margin-left: 26px;
+	}
+	.head .more .box{
+		width: 330px;
+		height: 220px;
+		background-color: white;
+		position: absolute;
+		right: 0;
+		top: 50px;
+		box-shadow: 0 0 10px #999999;
+		border-radius: 12px;
+		display: none;
+		z-index: 1;
+	}
+	.head .more .box a{	
+		display: block;	
+		font-size: 13px;
+		color: #222;
+	}
+	.head .more .box a:hover{
+		color: #315efb;
+	}
+	.head .more .box li{
+		width: 25%;
+		line-height:15px;
+		margin-top: 20px;
+		text-align:center;
+		float: left;
+	}
+	.head .more .box li:last-child{
+		width: 100%;
+		line-height: 3.5;
+	}
+	.head .more .box li img{
+		width: 44px;
+		height: 44px;
+	}
+	.head .more:hover .box{
+		display: block;
+	}
+/* 头右 */
+.head-right{
+	height: 100%;
+	float: right;
+	font-size: 13px;
+}
+.head-right .setting{
+	float: left;
+	margin-right: 32px;
+	position: relative;	
+}
+.head-right .setting .box2{
+	width: 84px;
+	background-color: white; 	
+	box-shadow: 0 0 10px #999999;
+	border-radius: 12px;
+	position: absolute;
+	top: 50px;
+	left: calc(50% - 42px);
+	padding: 8px 0;
+	display: none;
+}
+.head-right .setting .box2 li{
+	width: 100%;
+	text-align: center;
+	line-height: 2;
+}
+.head-right .setting:hover .box2{
+	display: block;
+}
+.head-right .setting .box2 li a:hover{
+	color:#315efb ;
+}
+.head-right .button{
+	float: right;
+	width: 48px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	background-color: #14A9FF;
+	margin-top: 18px;
+	color: white;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-right: 24px;
+}
+/* 内容 */
+.big .content{
+	width: 100%;
+	height: calc(100vh - 100px);
+}
+.content .heart{
+	width: 654px;
+	height: 100%;
+	margin: auto;
+}
+.heart .logo{
+	width: 100%;
+	text-align: center;
+}
+.heart .logo img{
+	width: 270px;
+	height: 130px;
+	cursor: pointer;
+}
+.content .heart .input{
+	width: 100%;
+	height: 44px;
+	position: relative;
+	top: 20px;
+}
+.heart .input input:first-child{
+	width: 548px;
+	height: 44px;
+	box-sizing: border-box;
+	border: 2px solid #c4c7ce;
+	outline: none;
+	text-indent: 13px;
+	float: left;
+	border-right: none;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.heart .input input:last-child{
+	width: calc(100% - 548px);
+	float: right;
+	height: 44px;
+	border: 2px solid #4e6ef2;
+	background-color: #4e6ef2;
+	font-size: 16px;
+	color: white;
+	cursor: pointer;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.heart .input .ico{
+	width: 24px;
+	height: 20px;
+	background-image: url(img/nicon-10750f3f7d.png);
+	background-repeat: no-repeat;
+	background-position: 0 -49px;
+	position: absolute;
+	right: calc(100% - 533px);
+	top: calc(50% - 10px);
+	cursor: pointer;
+}
+.heart .input .ico:hover{
+	background-position: 0 -73px;
+}
+.heart .list{
+	width: 100%;
+	margin-top: 40px;
+}
+.heart .list .title{
+	width: 100%;
+	height: 20px;
+}
+.heart .list .title span:first-child{
+	float: left;
+	font-size: 14px;
+}
+.heart .list .title span:last-child{
+	float: right;
+	font-size: 14px;
+	color: #9195a3;
+	cursor: pointer;	
+	
+}
+.list .title .huan{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+	background-image: url(img/刷新.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.heart .list .title span:last-child:hover{
+	color:#169AF3 ;
+}
+.heart .list .title span:last-child:hover .huan{
+	background-image: url(img/666.png);
+}
+.list .lists{
+	width: 100%;
+}
+.list .lists li{
+	width: 50%;
+	float: left;
+	font-size: 14px;
+	line-height: 2.2;
+	margin-top: 5px;
+}
+.list .lists li a{
+	color: #222222;
+	margin-left: 8px;
+}
+.list .lists li a:hover{
+	color: #169AF3;
+}
+.list .lists li:nth-child(1) span{
+	color: #fe2d46;
+}
+.list .lists li:nth-child(3) span{
+	color: #f60;
+}
+.list .lists li:nth-child(5) span{
+	color: #faa90e;
+}
+.list .lists li:nth-child(2),
+.list .lists li:nth-child(4),
+.list .lists li:nth-child(6){
+	box-sizing: border-box;
+	padding-left: 50px;
+	color: #9195a3;
+}
+/* 底部 */
+.foot{
+	width: 100%;
+	height: 40px;
+	background-color: #fbfbfb;
+	position: fixed;
+}
+.foot .foot-left{
+	float: left;
+	width: 50%;
+	height: 100%;
+	position: fixed;
+}
+.foot .foot-left a{
+	font-size: 12px;
+	line-height: 40px;
+	color: rgba(0,0,0,0.5);
+	margin-left: 25px;
+}
+.foot .foot-left a:hover{
+	color: black;
+}
+.foot .foot-right{
+	float: right;
+	width: 50%;
+	height: 100%;
+	position: fixed;
+	right: 0;
+}
+.foot .foot-right>a{
+	float: right;
+	font-size: 12px;
+	line-height: 40px;
+	margin-right: 15px;
+	color: rgba(0,0,0,0.5);
+}
+.foot .foot-right>a:hover{
+	color: black;
+}
+.foot .foot-right>span{
+	font-size: 12px;
+	line-height: 40px;
+	margin-right: 15px;
+	color: rgba(0,0,0,0.5);
+	float: right;
+}
+
+/* 二维码 */
+.ewm-big{
+	width: 70px;
+	height: 44px;
+	position: fixed;
+	right: 20px;
+	bottom: 60px;
+	cursor: pointer;
+}
+.ewm-big .ewm{
+	width: 44px;
+	height: 44px;
+	background-color: #fbfbfb;
+	position: absolute;
+	right: 0;
+	border-radius: 50%;
+	background-image: url(img/er1.png);
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+	background-position: center;
+}
+.ewm-big .box3{
+	width: 290px;
+	height: 110px;
+	background-color: white;
+	position: absolute;
+	right: 60px;
+	bottom: 0;
+	box-shadow: 0 0 10px #999;
+	border-radius: 10px;
+	display: none;
+}
+.ewm-big .ewm:hover{
+	background-image: url(img/er.png);
+	box-shadow: 0 0 4px #999;
+}
+.ewm-big:hover .box3{
+	display: block;
+}
+.ewm-big .box3 li img{
+	width: 80px;
+	height: 80px;
+	float: right;
+	margin-top: 15px;
+	margin-right: 15px;
+	cursor: auto;
+}
+.box3 .tu{
+	cursor: auto;
+}
+.box3 .tu .tu2{
+	height: 100%;
+	width: 180px;
+	float: left;
+	margin-top: 30px;
+}
+.box3 .tu .tu2 h3{
+	margin-left: 25px;
+}
+.box3 .tu .tu2 span{
+	font-size: 14px;
+	margin-top: 8px;
+	margin-left: 25px;
+	color: rgba(0,0,0,0.5);
+}
